@@ -1,0 +1,23 @@
+body{
+    font-size: 16px;
+    font-style: oblique;
+
+}
+h1 {
+color:orange; 
+font-size:65px;
+font-family: sans-serif;
+}
+p{
+    font-weight: 600; font-size: 3em;
+}
+.backgroundred{background-color: orangered;}
+ul{
+    line-height: 2;
+    text-align: center;
+    text-decoration:white;
+    color:white
+}
+#yellow {background-color: yellow;}
+#red{background-color: red;}
+#brown{background-color:rgb(27, 6, 6);}
