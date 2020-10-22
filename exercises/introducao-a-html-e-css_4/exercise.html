@@ -4,6 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Stomatopoda</title>
+    <style>
+
+        header li {
+            display: inline-block;
+            
+            padding: 20px;
+            background-color:purple;
+    
+        }
+        header{
+            background-image: url(/uw-2010-06-11.jpg);
+            font-weight: bold;
+            padding: 0 , 20px;
+            color: white;
+           
+        }
+        header h1{
+            font-size: 250%;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+           
+        }
+        article{
+           
+        }
+        .article1{
+            display: inline-block;
+            width: 69%;
+            margin-top: 20px;
+        
+        }
+        .article2{
+            display: inline-block;
+            width: 29%;
+            text-align: center;
+            float:right;
+            background-color:rgba(185, 58, 147, 0.548);
+            margin-top: 20px;
+            padding-bottom: 20px;
+            }
+        .picture1{
+            float: left;
+            margin-right: 20px;
+
+        } 
+        .article1 h2{
+           margin-top: 0;
+        }   
+        h2{
+            background-color: rgba(185, 58, 147, 0.548);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .picture2{
+            float: right;
+        }
+        .article-vision p{
+            width: 70%;
+        }
+        .socopotente img{
+            float:left;
+            margin-right: 20px;
+            
+        }
+        .socopotente p{
+            display: inline-block;
+            width: 60%;
+         }
+         ul{
+            font-weight: bold;
+         }
+         .familias li{
+             display: inline-block;
+             width: 19%;
+            
+         }
+         nav,footer{
+             background-color: rgba(185, 58, 147, 0.548);
+             padding: 20px;
+             margin:0;
+         }
+        
+
+
+    </style>
   </head>
   <body>
         <header>
@@ -15,34 +102,39 @@
             </nav>
         </header>
 
-<article>
-    <h2>
-        Stomatopoda
-    </h2>  
-    <p>
-        Stomatopoda (Odontodactylus scyllarus), chamados popularmente de tamarutacas ou de lacraias-do-mar no Brasil, é uma ordem de crustáceos marinhos da subclasse Hoplocarida, que agrupa cerca de 400 espécies, caracterizadas principalmente pela morfologia da segunda pata torácica, que é modificada em apêndice subquelado, lembrando uma pata de louva-a-deus.[2]
-    </p>
-    <img src="/250px-Odontodactylus_scyllarus1.jpg" alt="Stomatopoda">
-    <ul>
-        Classificação científica
-    </ul>
+<article >
+    <section class="article1">
+        <img class="picture1" src="/250px-Odontodactylus_scyllarus1.jpg" alt="Stomatopoda">  
+        <h2>
+            Stomatopoda
+        </h2>  
+        <p>
+            Stomatopoda (Odontodactylus scyllarus), chamados popularmente de tamarutacas ou de lacraias-do-mar no Brasil, é uma ordem de crustáceos marinhos da subclasse Hoplocarida, que agrupa cerca de 400 espécies, caracterizadas principalmente pela morfologia da segunda pata torácica, que é modificada em apêndice subquelado, lembrando uma pata de louva-a-deus.[2]
+        </p>
+    </section>
+    <section class="article2">
+       
+        <ul>
+            Classificação científica
+        </ul>
 
-    <li>Reino:	Animalia</li>
-    <li>Filo:	Arthropoda</li>
-    <li>Subfilo:	Crustacea</li>
-    <li>Classe:	Malacostraca</li>
-    <li>Subclasse:	Hoplocarida</li>
-    <li>Ordem:	Stomatopoda</li>
-    <li>Latreille, 1817</li>
+        <li>Reino:	Animalia</li>
+        <li>Filo:	Arthropoda</li>
+        <li>Subfilo:	Crustacea</li>
+        <li>Classe:	Malacostraca</li>
+        <li>Subclasse:	Hoplocarida</li>
+        <li>Ordem:	Stomatopoda</li>
+        <li>Latreille, 1817</li>
+    </section>
 </article>    
 
 <h2>
     Fatos sobre o Stomatopoda
 </h2>
-<article>
+<article class="article-vision">
     
     <h3>Visão</h3>
-    <img src="/download.jpeg" alt="stomatopoda">
+    <img class="picture2" src="/download.jpeg" alt="stomatopoda">
     <p>
         Esses animais possuem o mais complexo sistema de visão de cores do mundo animal, pois enxergam 12 cores primárias, correspondentes aos 12 pigmentos distintos presentes em sua retina.
 
@@ -51,11 +143,12 @@
     Como cada cone pode ver cerca de 100 cores, os estomatópodes são capazes de ver 1024 cores, ou seja, 1 septilhão de cores. Em comparação, o olho humano vê 106 cores, ou seja, 1 milhão de cores apenas. A visão dos estomatópodes é sensível à luz ultravioleta, mas ainda é desconhecido se ela pode distinguir a luz infravermelha.
     </p>
 </article>
-<article>
+<hr>
+<article class="socopotente">
     <h3>
         Soco potente
     </h3>
-    <img src="/soco.jpeg" alt="Soco potente">
+    <img  src="/soco.jpeg" alt="Soco potente">
     <p>
         Os Odontodactylus scyllarus, são capazes de desferir um dos mais rápidos e violentos golpes do reino animal, um soco que pode apresentar a velocidade de um tiro calibre .22 <bold>(equivalente a 720km/h) e uma força de impacto de 60 kg/cm².</bold>
     </p>
@@ -63,8 +156,9 @@
         Essa força esmagadora é a responsável pelo seu título de "lagosta-boxeadora" e é capaz de facilmente quebrar a carapaça de um caranguejo, as conchas duras e calcificadas de gastrópodes ou até mesmo quebrar o vidro reforçado de um aquário.
     </p>
 </article>
-
-<section>
+<br>
+<hr>
+<section class="familias">
 
     <ul> Famílias</ul>
         <li>Indosquillidae</li>
@@ -87,13 +181,14 @@
         <li>Squillidae</li>
         <li>Parasquillidae</li>
         <li>Sculdidae</li>
-</section>        
-
+</section> 
+<br>       
+<hr>
 <nav>
     <ul>Bibliografia</ul>
-    <li>https://pt.wikipedia.org/wiki/Stomatopoda#Fam%C3%ADlias</li>
-    <li>https://www.solbrilhando.com.br/Esportes/MMA/Os_Golpes.htm</li>
-    <li>http://eonaturalista.blogspot.com/2015/05/stomatopoda-maravilhosos-terrores-dos.html</li>
+    <li><a href="https://pt.wikipedia.org/wiki/Stomatopoda#Fam%C3%ADlias">https://pt.wikipedia.org/wiki/Stomatopoda#Fam%C3%ADlias</a></li>
+    <li><a href="https://www.solbrilhando.com.br/Esportes/MMA/Os_Golpes.htm">https://www.solbrilhando.com.br/Esportes/MMA/Os_Golpes.htm</a></li>
+    <li><a href="http://eonaturalista.blogspot.com/2015/05/stomatopoda-maravilhosos-terrores-dos.html">http://eonaturalista.blogspot.com/2015/05/stomatopoda-maravilhosos-terrores-dos.html</a></li>
 
 </nav>    
 <footer>
