@@ -51,11 +51,10 @@ else{
 //5
 if(a + b + c == 180){
     console.log(true);
-    return true;
+    
 }
 else {
     console.log('Ângulos inválidos');
-    return false;
-}
-
-//6
+    
+};
+ switch
