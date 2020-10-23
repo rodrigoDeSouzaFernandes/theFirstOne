@@ -36,3 +36,16 @@ else if(e > d && e > c){
 else{
     console.log("Os numeros são iguais")
 }
+
+//4
+if(a > 0){
+    console.log(true)
+}
+else if(a < 0){
+    console.log(false)
+}
+else{
+    console.log(0)
+}
+
+//5
