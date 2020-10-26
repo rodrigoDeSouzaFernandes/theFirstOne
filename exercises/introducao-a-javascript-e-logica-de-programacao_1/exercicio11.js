@@ -1,8 +1,8 @@
 let salarioBruto = 3500;
 let inss;
 let ir;
-let salarioLiquido = salarioBruto - inss - ir;
-let salarioBaseIr = salarioBruto - inss;
+
+
 
 //INSS
 if (salarioBruto <= 1556.94 ) {
@@ -17,7 +17,7 @@ else if (salarioBruto <= 5189.82) {
 else {
     inss = 570.88;
 }
-
+let salarioBaseIr = salarioBruto - inss;
 
 //IR
 if (salarioBaseIr <= 1903.98) {
@@ -35,4 +35,5 @@ else if(salarioBaseIr <= 4664.68){
 else{
     ir = (27.5/100*salarioBaseIr) - 869.36
 }
+let salarioLiquido = salarioBruto - inss - ir;
 console.log(salarioLiquido)
