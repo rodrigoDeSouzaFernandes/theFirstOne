@@ -1,6 +1,6 @@
-let count = []
+let count = [];
 
 for(let index = 1; index <= 25; index += 1){
-    count.push(index)
+    count.push(index);
 }
-console.log(count)
+console.log(count);
