@@ -1,8 +1,8 @@
-let n = 7
-let quadradoAsteriscos = ""
+let n = 5
+let triangle = ""
 for(let line = 1; line <= n; line += 1){
     for(let col = n; col == n; col += 1){
-        quadradoAsteriscos += "*";
+        triangle += "* ";
     }
-    console.log(quadradoAsteriscos)
+    console.log(triangle)
 }
