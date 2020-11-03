@@ -129,7 +129,12 @@ for(let index = 0; index < listItens.length; index +=1){
     if(elements.innerText.includes('dez')){
         document.querySelector('ul').removeChild(elements);
     }
+    }
+
+ for(let index = 0; index < listItens.length; index +=1){
+    let elements = listItens[index]
     if (elements.innerText.includes('nove')){
         document.querySelector('ul').removeChild(elements);
-    }
-}
+        }
+        }
+   
