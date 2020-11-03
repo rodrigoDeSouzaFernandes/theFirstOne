@@ -92,3 +92,29 @@ for(index = 0; index < 3; index +=1){
     let addh = document.createElement('h3');
    mainContent.appendChild(addh) ;
 }
+
+// parte 2
+//1 - Adicione a classe title na tag h1 criada;
+let tagh1 = document.querySelector('h1');
+tagh1.className = 'title';
+
+//2 - Adicione a classe description nas 3 tags h3 criadas;
+for(let index = 0; index <= 2; index +=1){
+    let descript = document.querySelectorAll('h3')[index];
+    descript.className = 'description';
+}
+
+//3 - Remova o div criado no passo 5 (aquele que possui a classe 
+//    left-content). Utilize a função .removeChild();
+
+ mainContent.removeChild(leftContent);
+
+//4 - Centralize o div criado no passo 6 (aquele que possui a classe 
+//right-content). Dica: para centralizar, basta configurar o
+//margin-right: auto do div;
+
+rightContent.style.marginRight = 'auto';
+
+
+
+
