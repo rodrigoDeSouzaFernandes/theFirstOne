@@ -123,3 +123,13 @@ centerContent.parentElement.style.backgroundColor = 'rgb(200,100,150)';
 
 //6 - Remova os dois últimos elementos (nove e dez) da lista 
 //    criada no passo 8.
+let listItens = document.getElementsByTagName('li');
+for(let index = 0; index < listItens.length; index +=1){
+    let elements = listItens[index]
+    if(elements.innerText.includes('dez')){
+        document.querySelector('ul').removeChild(elements);
+    }
+    if (elements.innerText.includes('nove')){
+        document.querySelector('ul').removeChild(elements);
+    }
+}
