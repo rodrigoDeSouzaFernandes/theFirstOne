@@ -116,5 +116,10 @@ for(let index = 0; index <= 2; index +=1){
 rightContent.style.marginRight = 'auto';
 
 
+//5 - Troque a cor de fundo do elemento pai da div criada 
+//no passo 3 (aquela que possui a classe center-content) para a cor verde;
 
+centerContent.parentElement.style.backgroundColor = 'rgb(200,100,150)';
 
+//6 - Remova os dois últimos elementos (nove e dez) da lista 
+//    criada no passo 8.
