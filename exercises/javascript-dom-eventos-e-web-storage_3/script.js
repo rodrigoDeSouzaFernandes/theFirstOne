@@ -72,10 +72,21 @@ function createDaysOfTheWeek() {
   button.addEventListener('click',function(){
     for(let i in allDays){
     if(allDays[i].className.includes('holiday')){
-        if(allDays[i].style.backgroundColor == 'red'){
+        if(allDays[i].style.backgroundColor == 'red'||allDays[i].style.backgroundColor == 'blue'){
             allDays[i].style.backgroundColor = 'rgb(238,238,238)'
         }
         else{allDays[i].style.backgroundColor = 'red'}
     }
 }})
   
+//4
+function createButtonFriday(buttonName){
+    let createButton = document.createElement('button');
+    createButton.innerText = buttonName;
+    createButton.id = "btn-friday";
+
+    let container = document.getElementsByClassName('buttons-container')[0];
+
+    container.appendChild(createButton)
+}
+createButtonFriday("friday");
