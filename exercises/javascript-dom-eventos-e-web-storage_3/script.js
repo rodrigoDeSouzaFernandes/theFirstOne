@@ -90,3 +90,17 @@ function createButtonFriday(buttonName){
     container.appendChild(createButton)
 }
 createButtonFriday("friday");
+
+//5
+let fridayButton = document.getElementById('btn-friday');
+
+
+fridayButton.addEventListener('click',function(){
+    for(let i in allDays){
+    if(allDays[i].className.includes('friday')){
+        if(allDays[i].innerHTML == "SEXTOU"){
+            allDays[i].innerHTML = dezDaysList[i]
+        }
+        else{allDays[i].innerHTML = "SEXTOU";}
+    }
+}})
