@@ -18,13 +18,41 @@ function createDaysOfTheWeek() {
   let dayslist = document.querySelector("#days");
 
   for(let index = 0; index < dezDaysList.length; index+=1){
-      let dias = dezDaysList[index];
-      let createLi = document.createElement('li');
-      createLi.className = 'days';
-      createLi.innerText = dias
-
-      dayslist.appendChild(createLi);
+      if(dezDaysList[index] === 24 || dezDaysList[index] === 31){
+        let dias = dezDaysList[index];
+        let createLi = document.createElement('li');
+        createLi.className = 'days holiday';
+        createLi.innerText = dias
+  
+        dayslist.appendChild(createLi);
+      }
+      else if(dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18    ) {
+        let dias = dezDaysList[index];
+        let createLi = document.createElement('li');
+        createLi.className = 'days friday';
+        createLi.innerText = dias
+  
+        dayslist.appendChild(createLi);
+      }
+      else if(dezDaysList[index] === 25 ){
+        let dias = dezDaysList[index];
+        let createLi = document.createElement('li');
+        createLi.className = 'days friday holiday';
+        createLi.innerText = dias
+  
+        dayslist.appendChild(createLi);
+      }
+      else{
+        let dias = dezDaysList[index];
+        let createLi = document.createElement('li');
+        createLi.className = 'days';
+        createLi.innerText = dias
+  
+        dayslist.appendChild(createLi);
+      }
   }
+
+
 
   //2
   function createButton(buttonName){
@@ -38,3 +66,16 @@ function createDaysOfTheWeek() {
   createButton("feriados");
 
   //3
+  let button = document.querySelector('#btn-holiday');
+  let allDays = document.getElementsByClassName('days');
+
+  button.addEventListener('click',function(){
+    for(let i in allDays){
+    if(allDays[i].className.includes('holiday')){
+        if(allDays[i].style.backgroundColor == 'red'){
+            allDays[i].style.backgroundColor = 'rgb(238,238,238)'
+        }
+        else{allDays[i].style.backgroundColor = 'red'}
+    }
+}})
+  
