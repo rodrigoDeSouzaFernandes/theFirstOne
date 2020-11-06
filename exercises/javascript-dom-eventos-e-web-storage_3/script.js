@@ -123,8 +123,10 @@ function zoomOut(){
 zoomOut();
 
 //7
+let taskContainer = document.querySelector('.my-tasks');
+
 function addTasks(taskName){
-  let taskContainer = document.querySelector('.my-tasks');
+ 
   let newTask = document.createElement('span');
   
   newTask.innerHTML = taskName;
@@ -133,3 +135,29 @@ function addTasks(taskName){
 addTasks('fazer exercicio')
 
 //8
+function addTaskLegend(color){
+  const divLegend = document.createElement('div');
+  divLegend.className = "task";
+  divLegend.style.backgroundColor = color;
+
+  taskContainer.appendChild(divLegend)
+}
+
+addTaskLegend('red');
+
+//9
+
+function selectTask(){
+  const task = document.querySelector('.task');
+  
+  task.addEventListener('click',function(event){
+    const taskSelected =  document.querySelector('.selected');
+    if(taskSelected === null){
+      event.target.className = "task selected"
+    }
+    else{
+      event.target.className = "task"
+    }
+  })
+}
+selectTask()
