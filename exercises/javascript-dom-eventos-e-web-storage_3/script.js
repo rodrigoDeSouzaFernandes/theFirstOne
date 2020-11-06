@@ -121,3 +121,15 @@ function zoomOut(){
   })
 }
 zoomOut();
+
+//7
+function addTasks(taskName){
+  let taskContainer = document.querySelector('.my-tasks');
+  let newTask = document.createElement('span');
+  
+  newTask.innerHTML = taskName;
+  taskContainer.appendChild(newTask);
+}
+addTasks('fazer exercicio')
+
+//8
