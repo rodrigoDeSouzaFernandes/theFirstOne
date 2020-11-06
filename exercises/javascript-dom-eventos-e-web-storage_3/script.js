@@ -104,3 +104,20 @@ fridayButton.addEventListener('click',function(){
         else{allDays[i].innerHTML = "SEXTOU";}
     }
 }})
+
+//6
+function zoom(){
+  dayslist.addEventListener('mouseover',function(event){
+    event.target.style.fontSize = "28px";
+    event.target.style.fontWeight = "bold"
+  })
+}
+zoom();
+
+function zoomOut(){
+  dayslist.addEventListener('mouseout',function(event){
+    event.target.style.fontSize = "20px";
+    event.target.style.fontWeight = "normal"
+  })
+}
+zoomOut();
