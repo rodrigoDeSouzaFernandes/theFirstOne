@@ -8,7 +8,7 @@
 </head>
 <body>
   <form action="" method="GET" enctype="multipart/form-data">
-    <fieldset>
+    <fieldset class='fieldset-dados-pessoais'>
       <legend>Dados pessoais </legend>
       <label for="name">Nome:</label>
       <input type="text" maxlength="40" id="name" class="input-text" required>
@@ -29,6 +29,18 @@
       <br>
       <input type="radio" name="type" id="type2" class="input-type">
       <label for="type2" >Apartamento</label>
+    </fieldset>
+    <fieldset class='fieldset-dados-ultimo-emprego'>
+      <legend>Dados do seu ultimo emprego</legend>
+      <label for="resum">Resumo do currículo</label> <br>
+      <textarea name="resum" id="resum" cols="100" rows="10" required></textarea><br>
+      <label for="cargo">Cargo:</label> 
+      <input type="text" name="cargo" id="cargo" class="input-text" maxlength="40" required>
+      <label for="descript">Descrição do cargo:</label><br>
+      <textarea name="descricao-cargo" id="descript" cols="100" rows="10" maxlength="500" required></textarea>
+      <br>
+      <label for="date">Data de inicio:</label>
+      <input type="date" name="date" id="date" required>
     </fieldset>
   </form>
   <script src="script.js"></script>
