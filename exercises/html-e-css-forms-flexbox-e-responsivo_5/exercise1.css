@@ -1,6 +1,7 @@
 body {
+    background: rgb(194, 221, 166);
   font-size: 20px;
-  margin: 1px;
+  margin: 10px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -24,7 +25,7 @@ figure {
 @media screen and (min-width: 800px) {
   body {
     background: rgb(200,200,250);
-    margin: auto;
+    margin: 30px;
   }
 
   .img-container {
@@ -37,4 +38,20 @@ figure {
     width: 48%;
   }
 
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        background: rgb(133, 162, 167);
+        font-size: 18px;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    h1, h2 {
+    font-size: 30px;    
+} 
+    figure {
+        width: 30%;
+    }
 }
