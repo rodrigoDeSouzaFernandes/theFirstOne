@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-size: 16px;
+  background-color: rgb(247, 175, 162);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background: rgb(138, 57, 43);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+header p {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(39, 13, 13);
+  color: white;
+  padding: 20px;
+}
+
+aside {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+article {
+  width: 90%;
+  margin:30px auto;
+}
+
+article p {
+  font-size: 20px;
+}
+
+footer {
+    width: 90%;
+    margin:30px auto;
+}
