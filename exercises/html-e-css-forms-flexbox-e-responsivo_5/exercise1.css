@@ -1,0 +1,40 @@
+body {
+  font-size: 20px;
+  margin: 1px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+h1 {
+  font-size: 25px;
+}
+h2 {
+
+}
+
+img {
+    width: 100%;
+
+}
+
+figure {
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background: rgb(200,200,250);
+    margin: auto;
+  }
+
+  .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  figure {
+    width: 48%;
+  }
+
+}
