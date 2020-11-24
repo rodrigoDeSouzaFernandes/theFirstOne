@@ -36,4 +36,6 @@ const lesson1 = {
   console.log(objectLength(lesson2));
 
   //    4
-  
+  const objectValues = (obj) => Object.values(obj);
+  console.log(objectValues(lesson2));
+
