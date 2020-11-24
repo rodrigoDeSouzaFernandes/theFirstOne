@@ -39,3 +39,23 @@ const lesson1 = {
   const objectValues = (obj) => Object.values(obj);
   console.log(objectValues(lesson2));
 
+  //    5 não fiz da forma proposta no exercicio.
+  let allLessons = {};
+  allLessons.lesson1 = lesson1;
+  allLessons.lesson2 = lesson2;
+  allLessons.lesson3 = lesson3;
+
+  console.log(allLessons);
+
+  //    6
+const numStudents = (obj) => {
+    let result = 0;
+    for(let i in obj) {
+        result += obj[i].numeroEstudantes;
+    }
+    return result;
+}
+console.log(numStudents(allLessons));
+
+//  
+
