@@ -18,7 +18,7 @@ const lesson1 = {
     turno: 'noite',
   };
 
-  //1
+  //    1
   const addMorning = (obj, key, value) => {
     const newKey = key
     const valor = value
@@ -26,3 +26,10 @@ const lesson1 = {
   }
   addMorning(lesson2, 'turno', 'manhã');
   console.log(lesson2);
+
+  //    2
+  const listAllKeys = (obj) => Object.keys(obj);
+  console.log(listAllKeys(lesson2));
+
+  //    3
+  
