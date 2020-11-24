@@ -32,4 +32,8 @@ const lesson1 = {
   console.log(listAllKeys(lesson2));
 
   //    3
+  const objectLength = (obj) => Object.keys(obj).length;
+  console.log(objectLength(lesson2));
+
+  //    4
   
