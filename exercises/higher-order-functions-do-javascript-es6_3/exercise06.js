@@ -10,8 +10,8 @@ function studentAverage() {
     newObject = {}
     newObject['name'] = curr;
     newObject['average'] = grades[index].reduce((a, b) => a + b)/grades[index].length;
-    console.log(newObject)
-    return acc 
+    acc.push(newObject)
+    return acc
   }, [])
 }
 
@@ -21,5 +21,5 @@ const expected = [
   { name: 'Maria Clara', average: 8.8 },
 ];
 
-//assert.deepEqual(studentAverage(), expected);
+assert.deepEqual(studentAverage(), expected);
 console.log(studentAverage())
