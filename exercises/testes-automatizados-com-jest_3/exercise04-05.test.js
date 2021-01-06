@@ -8,6 +8,12 @@ describe('mocking modules', () => {
     firstLetter.mockImplementation(string => string[string.length - 1]);
     expect(firstLetter('Rodrigo')).toBe('o');
     concatenate.mockImplementation((str1, str2, str3) => str1 + str2 + str3);
-    expect(concatenate('a', 'b', 'c')).toBe('abc')
+    expect(concatenate('a', 'b', 'c')).toBe('abc');
+  });
+  it('EX5 - restore implementation', () => {
+    uppercase.mockImplementation(string => string.toLowerCase());
+    expect(uppercase('RODRIGO')).toBe('rodrigo');
+    uppercase.mockReset().mockImplementation(string => string.toUpperCase())
+    expect(uppercase('rodrigo')).toBe('RODRIGO');
   })
-})
+});
