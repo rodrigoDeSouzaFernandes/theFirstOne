@@ -1,0 +1,1 @@
+const randomNumber = require('./exercise01');
