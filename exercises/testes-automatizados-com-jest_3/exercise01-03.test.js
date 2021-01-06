@@ -1,4 +1,4 @@
-let randomNumber = require('./exercise01');
+let randomNumber = require('./exercise01-03');
 
 describe('Testing random number', () => {
   it('EX1 - should return 10', () => {
