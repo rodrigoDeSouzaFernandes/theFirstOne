@@ -18,5 +18,16 @@ describe('Testing random number', () => {
     expect(randomNumber(6, 3)).toBe(2);
     expect(randomNumber(9, 3)).toBe(undefined);
   })
+  it('EX3 - reset implementation', () => {
+    randomNumber = jest
+    .fn()
+    .mockImplementation((a, b, c) => a * b * c);
+    expect(randomNumber(2, 2, 2)).toBe(8);
+    expect(randomNumber).toHaveBeenCalled();
+    randomNumber
+    .mockReset()
+    .mockImplementation(a => a * 2);
+    expect(randomNumber(2)).toBe(4);
+  })
 });
 
