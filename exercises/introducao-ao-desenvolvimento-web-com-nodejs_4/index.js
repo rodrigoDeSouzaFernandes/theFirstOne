@@ -25,7 +25,9 @@ app.post("/greetings", (req, res) => {
   res.status(200).json({ message: `Hello: ${name}` });
 });
 
-app.use((err, req, res, next) => {
+
+
+app.use((err, _req, res, _next) => {
   res.status(500).send(`Algo deu errado, mensagem: ${err.message}`)
 });
 
